@@ -113,14 +113,15 @@ export default async function CurrentIssuePage({
               </a>
 
               {article.pdfUrl && (
-                <a
-                  href={`https://drl-backend-wlz1.onrender.com${article.pdfUrl}`}
-                  target="_blank"
-                  className="font-medium text-[#0A1F44] hover:text-[#F4A623] transition"
-                >
-                  Download PDF
-                </a>
-              )}
+  <a
+    href={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(article.pdfUrl)}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-medium text-[#0A1F44] hover:text-[#F4A623] transition"
+  >
+    View PDF
+  </a>
+)}
 
             </div>
 
