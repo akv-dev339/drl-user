@@ -131,12 +131,13 @@ export default async function JournalLayout({
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#0A1F44] to-[#a0b8e6]">
 
-      {/* ================= HEADER ================= */}
+      {/* HEADER */}
       <header className="bg-[#0A1F44] border-b border-[#0F2A5A]">
-        <div className="max-w-6xl mx-auto px-6 py-10">
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
 
           <Link href="/journals" className="inline-block group">
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-center sm:text-left">
 
               <Image
                 src="/drl-logo.jpeg"
@@ -147,7 +148,7 @@ export default async function JournalLayout({
                 priority
               />
 
-              <h1 className="text-4xl font-extrabold tracking-tight text-white group-hover:text-[#F4A623] transition">
+              <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white group-hover:text-[#F4A623] transition">
                 {journalTitle}
               </h1>
 
@@ -155,25 +156,27 @@ export default async function JournalLayout({
           </Link>
 
           {/* ISSN */}
-          <div className="mt-4 flex items-center gap-4 text-sm">
-            <span className="px-3 py-1 bg-[#F4A623]/20 text-[#F4A623] rounded-full border border-[#F4A623]/40">
+          <div className="mt-3 flex justify-center sm:justify-start text-sm">
+            {/* <span className="px-3 py-1 bg-[#F4A623]/20 text-[#F4A623] rounded-full border border-[#F4A623]/40">
               ISSN: {journalIssn}
-            </span>
+            </span> */}
           </div>
 
         </div>
+
       </header>
 
-      {/* ================= NAVIGATION ================= */}
+      {/* NAVBAR */}
       <div className="bg-white border-t-2 border-[#F4A623] border-b border-gray-200">
         <JournalNavbar journalId={resolvedParams.journal} />
       </div>
 
-      {/* ================= MAIN CONTENT ================= */}
-      <main className="flex-grow py-20">
-        <div className="max-w-6xl mx-auto px-6">
+      {/* MAIN CONTENT */}
+      <main className="flex-grow py-10 sm:py-20">
 
-          <div className="bg-white rounded-2xl shadow-xl p-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+
+          <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-10">
 
             <JournalTransition>
               {children}
@@ -182,9 +185,10 @@ export default async function JournalLayout({
           </div>
 
         </div>
+
       </main>
 
-      {/* ================= FOOTER ================= */}
+      {/* FOOTER */}
       <footer className="bg-[#0A1F44] text-center text-sm text-gray-300 py-8 border-t border-[#132C5B]">
         © {new Date().getFullYear()} DRL Journals. All rights reserved.
       </footer>

@@ -1,3 +1,5 @@
+import PageContainer from "@/components/ui/PageContainer";
+
 interface SubmissionPageProps {
   params: Promise<{
     journal: string;
@@ -26,7 +28,8 @@ export default async function SubmissionPage({ params }: SubmissionPageProps) {
   const journal = await res.json();
 
   return (
-    <div className="max-w-4xl">
+    <PageContainer>
+    
 
       {/* ================= JOURNAL OF SCIENCES ================= */}
       {journal.id === 1 && (
@@ -357,6 +360,7 @@ export default async function SubmissionPage({ params }: SubmissionPageProps) {
         </>
       )}
 
-    </div>
+    
+    </PageContainer>
   );
 }

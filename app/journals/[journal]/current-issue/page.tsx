@@ -1,3 +1,5 @@
+import PageContainer from "@/components/ui/PageContainer";
+
 interface CurrentIssuePageProps {
   params: Promise<{
     journal: string;
@@ -44,7 +46,8 @@ export default async function CurrentIssuePage({
   const articles = await articlesRes.json();
 
   return (
-    <div className="max-w-5xl mx-auto">
+    <PageContainer>
+    
 
       {/* Page Header */}
       <div className="mb-12">
@@ -76,7 +79,7 @@ export default async function CurrentIssuePage({
         {articles.map((article: any) => (
           <div
             key={article.id}
-            className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition"
+            className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition duration-300"
           >
 
             {/* Article Type */}
@@ -130,6 +133,6 @@ export default async function CurrentIssuePage({
 
       </div>
 
-    </div>
+    </PageContainer>
   );
 }

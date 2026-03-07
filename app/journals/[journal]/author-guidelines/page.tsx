@@ -1,3 +1,5 @@
+import PageContainer from "@/components/ui/PageContainer";
+
 interface PageProps {
   params: Promise<{
     journal: string;
@@ -10,7 +12,8 @@ export default async function AuthorGuidelinesPage({ params }: PageProps) {
   const journalId = journal;
    if (journalId === "2") {
     return (
-      <div className="max-w-5xl">
+      <PageContainer>
+      
 
         {/* PAGE TITLE */}
         <div className="mb-12">
@@ -391,11 +394,13 @@ export default async function AuthorGuidelinesPage({ params }: PageProps) {
           </section>
 
         </div>
-      </div>
+      
+      </PageContainer>
     );
   }
   return (
-    <div className="max-w-5xl">
+    <PageContainer>
+    
 
       {/* ================= PAGE TITLE ================= */}
       <div className="mb-12">
@@ -728,6 +733,7 @@ export default async function AuthorGuidelinesPage({ params }: PageProps) {
         </section>
 
       </div>
-    </div>
+    
+    </PageContainer>
   );
 }

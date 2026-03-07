@@ -1,6 +1,9 @@
+import PageContainer from "@/components/ui/PageContainer";
+
 export default function ContactPage() {
   return (
-    <div className="max-w-4xl">
+    <PageContainer>
+    
 
       {/* ================= PAGE HEADER ================= */}
       <div className="mb-12">
@@ -67,6 +70,7 @@ export default function ContactPage() {
         </section>
 
       </div>
-    </div>
+    
+    </PageContainer>
   );
 }

@@ -6,14 +6,14 @@ import Link from "next/link";
 interface JournalCardProps {
   title: string;
   description: string;
-  issn: string;
+ // issn: string;
   href: string;
 }
 
 export default function JournalCard({
   title,
   description,
-  issn,
+  //issn,
   href,
 }: JournalCardProps) {
   return (
@@ -37,9 +37,9 @@ export default function JournalCard({
         </p>
 
         {/* ISSN Badge */}
-        <span className="inline-block mt-6 px-3 py-1 text-sm font-medium bg-blue-50 text-blue-800 rounded-full border border-blue-200">
+        {/* <span className="inline-block mt-6 px-3 py-1 text-sm font-medium bg-blue-50 text-blue-800 rounded-full border border-blue-200">
           ISSN: {issn}
-        </span>
+        </span> */}
       </div>
 
       <Link
