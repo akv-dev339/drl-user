@@ -47,3 +47,7 @@ h3 {
 p {
   @apply text-sm sm:text-base leading-relaxed;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

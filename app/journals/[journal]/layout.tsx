@@ -132,39 +132,43 @@ export default async function JournalLayout({
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#0A1F44] to-[#a0b8e6]">
 
       {/* HEADER */}
-      <header className="bg-[#0A1F44] border-b border-[#0F2A5A]">
+<header className="bg-[#0A1F44] border-b border-[#0F2A5A]">
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 py-5 sm:py-8">
 
-          <Link href="/journals" className="inline-block group">
-            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-center sm:text-left">
+    <Link href="/journals" className="inline-block group">
 
-              <Image
-                src="/drl-logo.jpeg"
-                alt="DRL Journals Logo"
-                width={50}
-                height={50}
-                className="object-contain"
-                priority
-              />
+      <div className="flex items-center justify-center sm:justify-start gap-3 sm:gap-4">
 
-              <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white group-hover:text-[#F4A623] transition">
-                {journalTitle}
-              </h1>
+        <Image
+          src="/drl-logo.jpeg"
+          alt="DRL Journals Logo"
+          width={45}
+          height={45}
+          className="object-contain"
+          priority
+        />
 
-            </div>
-          </Link>
+        <h1 className="text-lg sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white group-hover:text-[#F4A623] transition leading-tight">
+          {journalTitle}
+        </h1>
 
-          {/* ISSN */}
-          <div className="mt-3 flex justify-center sm:justify-start text-sm">
-            {/* <span className="px-3 py-1 bg-[#F4A623]/20 text-[#F4A623] rounded-full border border-[#F4A623]/40">
-              ISSN: {journalIssn}
-            </span> */}
-          </div>
+      </div>
 
-        </div>
+    </Link>
 
-      </header>
+    {/* ISSN */}
+    <div className="mt-2 flex justify-center sm:justify-start text-sm">
+      {/* 
+      <span className="px-3 py-1 bg-[#F4A623]/20 text-[#F4A623] rounded-full border border-[#F4A623]/40">
+        ISSN: {journalIssn}
+      </span> 
+      */}
+    </div>
+
+  </div>
+
+</header>
 
       {/* NAVBAR */}
       <div className="bg-white border-t-2 border-[#F4A623] border-b border-gray-200">
