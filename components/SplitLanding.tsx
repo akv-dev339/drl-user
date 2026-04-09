@@ -25,7 +25,7 @@ export default function SplitLanding() {
       {/* 🏛 Branding Header */}
       <div className="relative z-10 text-center pt-20 pb-12 px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-white tracking-wide">
-          DNA-DS Research Laboratory(DRL)
+          DNA-DS Research Laboratory (DRL)
         </h1>
         <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
           Advancing Knowledge Through Scientific Innovation, 
