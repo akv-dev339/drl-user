@@ -87,16 +87,18 @@ export default function SplitLanding() {
             DNA-DS Research Lab
           </motion.h2>
 
-          <Link
-            href="/research-lab"
-            className="px-8 py-3 rounded-md 
-                       border border-white/40 
-                       bg-white/10 backdrop-blur-md 
-                       hover:bg-white hover:text-green-900 
-                       transition-all duration-300"
-          >
-            Visit Lab
-          </Link>
+          <a
+  href="https://drl-dna-ds-research-laboratoy.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-8 py-3 rounded-md 
+             border border-white/40 
+             bg-white/10 backdrop-blur-md 
+             hover:bg-white hover:text-green-900 
+             transition-all duration-300"
+>
+  Visit Lab
+</a>
         </motion.div>
 
       </div>
