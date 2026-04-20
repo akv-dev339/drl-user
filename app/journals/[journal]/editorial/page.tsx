@@ -92,6 +92,50 @@ export default async function EditorialPage({ params }: PageProps) {
       name: "Dr. Shiv Om Pratap",
       affiliation: "ICAR-Central Avian Research Institute, Bareilly, India",
     },
+    {
+  name: "Dr. Monalisa Javral",
+  affiliation: "Forensic Odontologist, Dental Surgeon, Boston International Clinic School",
+},
+{
+  name: "Dr. Neha Pandey",
+  affiliation: "Food Technology, Indian Institute of Soybean Research, Indore",
+},
+{
+  name: "Dr. M. Vijaya Simha",
+  affiliation: "Department of Medical Laboratory Technology, University Institute of Allied Health Sciences, Chandigarh University, Mohali, Punjab, India",
+},
+{
+  name: "Dr. Ravindra Rawal",
+  affiliation: "Department of Zoology, Government PG College Khargone, Kranti Surya Tantya Bheel University, Khargone, India",
+},
+{
+  name: "Dr. K. M. Kumar",
+  affiliation: "Department of Bioinformatics, Pondicherry University (A Central University, Govt of India), Pondicherry, India",
+},
+{
+  name: "Dr. Pooja Sharma",
+  affiliation: "Department of Zoology, Mata Jijabai Govt Girls College, Indore, India",
+},
+{
+  name: "Dr. Ranjana Verma",
+  affiliation: "Department of Zoology, Bherulal Patidar Govt PG College, Mhow, India",
+},
+{
+  name: "Dr. Sanjay Singh Baroniya",
+  affiliation: "Department of Botany, Swa. Tukojirao Pawar Shaskiya Vigyan Mahavidyalaya, Dewas",
+},
+{
+  name: "Dr. Praval Singh Chauhan",
+  affiliation: "School of Sciences, ITM (SLS) Baroda University, Vadodara, Gujarat, India",
+},
+{
+  name: "Dr. Ashok Kumar Khandel",
+  affiliation: "Head & Principal Scientist, Bhoomi Biotechnology Venture for Research and Development, Bhopal (M.P.), India",
+},
+{
+  name: "Dr. Shivangi Saxena",
+  affiliation: "Jaypee Institute of Information Technology, Noida, India",
+},
   ];
 
   return (

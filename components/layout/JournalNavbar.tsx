@@ -15,7 +15,7 @@ export default function JournalNavbar({ journalId }: NavbarProps) {
     { label: "Current Issue", href: `/journals/${journalId}/current-issue` },
     { label: "Archive", href: `/journals/${journalId}/archive` },
     { label: "Submission", href: `/journals/${journalId}/submission` },
-    { label: "Editorial Board", href: `/journals/${journalId}/editorial` },
+    { label: "Editorial Team", href: `/journals/${journalId}/editorial` },
     { label: "Author Guidelines", href: `/journals/${journalId}/author-guidelines` },
     { label: "Contact", href: `/journals/${journalId}/contact` },
   ];
