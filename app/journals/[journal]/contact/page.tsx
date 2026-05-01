@@ -29,7 +29,7 @@ export default function ContactPage() {
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
             <p className="text-lg font-semibold text-blue-900">
-              📩 drlindore25@gmail.com
+              📩 drljournals@dnadsresearch.com
             </p>
           </div>
 

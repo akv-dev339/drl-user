@@ -88,7 +88,7 @@ export default function SplitLanding() {
           </motion.h2>
 
           <a
-  href="https://drl-dna-ds-research-laboratoy.vercel.app/"
+  href="https://lab.dnadsresearch.com"
   target="_blank"
   rel="noopener noreferrer"
   className="px-8 py-3 rounded-md 

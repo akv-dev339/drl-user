@@ -53,7 +53,7 @@ export default async function SubmissionPage({ params }: SubmissionPageProps) {
 
               <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
                 <p className="text-lg font-semibold text-blue-900">
-                  📩 drlindore25@gmail.com
+                  📩 drljournals@dnadsresearch.com
                 </p>
               </div>
 
@@ -262,7 +262,7 @@ export default async function SubmissionPage({ params }: SubmissionPageProps) {
             <p>The DRL Journal of Multidisciplinary Studies currently accepts manuscripts via e-mail submission only. Authors must send all required documents to the Editorial Office at:</p>
 
             <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
-              <p className="text-lg font-semibold text-blue-900">📩 drlindore25@gmail.com</p>
+              <p className="text-lg font-semibold text-blue-900">📩 drljournals@dnadsresearch.com</p>
             </div>
 
             <p>Authors are requested to carefully follow the instructions below to ensure smooth processing of their submission.</p>

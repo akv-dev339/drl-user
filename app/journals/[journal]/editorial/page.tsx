@@ -11,130 +11,216 @@ export default async function EditorialPage({ params }: PageProps) {
   if (journal === "2") {
     return (
       <div className="max-w-4xl mx-auto text-center py-24 px-4">
-
-        <div className="flex justify-center mb-8">
-          <div className="w-16 h-16 rounded-full bg-[#F4A623]/10 flex items-center justify-center">
-            <span className="text-2xl text-[#0A1F44]">⏳</span>
-          </div>
-        </div>
-
         <h1 className="text-3xl sm:text-4xl font-bold text-slate-900">
           Page Coming Soon
         </h1>
 
         <div className="mt-4 w-20 h-1 mx-auto bg-gradient-to-r from-[#0A1F44] to-[#F4A623] rounded-full" />
 
-        <p className="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed">
-          This section is currently under development.  
-          The content will be available soon.
+        <p className="mt-6 text-base sm:text-lg text-slate-600">
+          This section is currently under development. The content will be available soon.
         </p>
-
-        <p className="mt-3 text-sm text-slate-400">
-          Please check back later for updates.
-        </p>
-
       </div>
     );
   }
 
-  /* ================= EDITOR-IN-CHIEF ================= */
+  /* ================= DATA ================= */
+
   const editorInChief = {
     name: "Dr. Sandeep Kumar Verma",
-    affiliation: "Professor & Head of Institute, SAGE University, Indore",
+    affiliation: `Professor & Head of Institute,
+SAGE University, Indore.`,
   };
 
-  /* ================= MEMBERS ================= */
   const members = [
-    { name: "Dr. Swati Dubey Mishra", affiliation: "Shri Vaishnav Institute of Forensic Science, Indore" },
-    { name: "Dr. Bhawana Joshi", affiliation: "School of Basic and Applied Sciences, SGT University, Gurugram" },
-    { name: "Dr. Maninder Kaur", affiliation: "School of Allied and Healthcare Sciences, AP Goyal Shimla University, Shimla" },
-    { name: "Dr. Viplov Kumar Biswas", affiliation: "Emory University School of Medicine, Atlanta, USA" },
-    { name: "Dr. Buhara Yücesan", affiliation: "Bolu Abant İzzet Baysal University, Turkey" },
-    { name: "Dr. Sudarshanee Geekiyanage", affiliation: "University of Ruhuna, Sri Lanka" },
-    { name: "Prof. Yakubu Boyi Ngwai", affiliation: "Nasarawa State University, Nigeria" },
-    { name: "Dr. Ashutosh Tripathi", affiliation: "ITM Vocational University, Vadodara, India" },
-    { name: "Dr. Elif Cepni", affiliation: "Istanbul University, Turkey" },
-    { name: "Prof. Dr. Kubilay Kurtulus Bastas", affiliation: "Selcuk University, Turkey" },
-    { name: "Dr. Satyvir Singh", affiliation: "RWTH Aachen University, Germany" },
-    { name: "Dr. Mukesh Malviya", affiliation: "Guangxi Academy of Agricultural Sciences, China" },
-    { name: "Dr. Shiv Om Pratap", affiliation: "ICAR-Central Avian Research Institute, India" },
-    { name: "Dr. Monalisa Javral", affiliation: "Forensic Odontologist, Boston International Clinic School" },
-    { name: "Dr. Neha Pandey", affiliation: "Indian Institute of Soybean Research, Indore" },
-    { name: "Dr. M. Vijaya Simha", affiliation: "Chandigarh University, Punjab, India" },
-    { name: "Dr. Ravindra Rawal", affiliation: "Govt PG College Khargone, India" },
-    { name: "Dr. K. M. Kumar", affiliation: "Pondicherry University, India" },
-    { name: "Dr. Pooja Sharma", affiliation: "Mata Jijabai Govt Girls College, Indore" },
-    { name: "Dr. Ranjana Verma", affiliation: "Govt PG College, Mhow" },
-    { name: "Dr. Sanjay Singh Baroniya", affiliation: "Govt Science College, Dewas" },
-    { name: "Dr. Praval Singh Chauhan", affiliation: "ITM Baroda University, Gujarat" },
-    { name: "Dr. Ashok Kumar Khandel", affiliation: "Bhoomi Biotechnology, Bhopal" },
-    { name: "Dr. Shivangi Saxena", affiliation: "Jaypee Institute of Information Technology, Noida" },
-    { name: "Dr. Amita Jain", affiliation: "PIEMR, Indore" },
-    { name: "Dr. Lakshmi Pillai", affiliation: "SAGE University, Indore" },
-    { name: "Dr. Doel Bose Pande", affiliation: "Indore Infertility Centre" },
-    { name: "Dr. Rachana Bajpai", affiliation: "Sri Aurobindo University, Indore" },
+    {
+      name: "Dr. Swati Dubey Mishra",
+      affiliation: "Shri Vaishnav Institute of Forensic Science, Indore",
+    },
+    {
+      name: "Dr. Bhawana Joshi",
+      affiliation:
+        "School of Basic and Applied Sciences, SGT University, Gurugram",
+    },
+    {
+      name: "Dr. Maninder Kaur",
+      affiliation:
+        "School of Allied and Healthcare Sciences, AP Goyal Shimla University, Shimla",
+    },
+    {
+      name: "Dr. Viplov Kumar Biswas",
+      affiliation:
+        "Pathology and Laboratory Medicine, Emory University School of Medicine, Atlanta, USA.",
+    },
+    {
+      name: "Dr. Buhara Yücesan",
+      affiliation:
+        "Bolu Abant İzzet Baysal University (BAIBU), Faculty of Agriculture and Natural Sciences, Gölköy, Bolu, Turkey",
+    },
+    {
+      name: "Dr. Sudarshanee Geekiyanage",
+      affiliation:
+        "Faculty of Agriculture, University of Ruhuna Mapalana, Kamburupitiya, Sri Lanka.",
+    },
+    {
+      name: "Prof. Yakubu Boyi Ngwai",
+      affiliation:
+        "Professor of Pharmaceutical Microbiology, Department of Microbiology, Nasarawa State University, Keffi, Nigeria.",
+    },
+    {
+      name: "Dr. Ashutosh Tripathi",
+      affiliation:
+        "Faculty of Life Health and Allied Sciences, ITM Vocational University, Vadodara, India.",
+    },
+    {
+      name: "Dr. Elif Cepni",
+      affiliation:
+        "Ebittek Biyoteknoloji Ar-Ge Tic. Ltd Şti., Istanbul Universitesi Avcılar Kampüsü, Argem Binası, Ofis No: 13-14, Avcılar, Istanbul, Turkey",
+    },
+    {
+      name: "Prof. Dr. Kubilay Kurtulus Bastas",
+      affiliation:
+        "Selcuk University, Faculty of Agriculture, Department of Plant Protection, 42031 Campus / Konya / Turkey",
+    },
+    {
+      name: "Dr. Satyvir Singh",
+      affiliation:
+        "Institute for Applied and Computational Mathematics, RWTH Aachen University, Schinkelstr. 2, D-52062 Aachen, Germany",
+    },
+    {
+      name: "Dr. Mukesh Malviya",
+      affiliation:
+        "Guangxi Academy of Agricultural Sciences, Address: 174 Daxue East Road, Nanning City Guangxi -530007 China.",
+    },
+    {
+      name: "Dr. Shiv Om Pratap",
+      affiliation:
+        "Research Fellow, Division of Biotechnology, ICAR-Central Avian Research Institute, Izzatnagar Bareilly (UP), India.",
+    },
+    {
+      name: "Dr. Monalisa Javral",
+      affiliation:
+        "Forensic Odontologist, Dental Surgeon, Boston International Clinic School",
+    },
+    {
+      name: "Dr. Neha Pandey",
+      affiliation:
+        "Food Technology, Indian Institute of Soybean Research, Indore",
+    },
+    {
+      name: "Dr. M. Vijaya Simha",
+      affiliation:
+        "Department of Medical Laboratory Technology, University Institute of Allied Health Sciences, Chandigarh University, Mohali, Punjab, India",
+    },
+    {
+      name: "Dr. Ravindra Rawal",
+      affiliation:
+        "Department of Zoology, Government PG College Khargone, Kranti Surya Tantya Bheel University Khargon, India",
+    },
+    {
+      name: "Dr. K. M. Kumar",
+      affiliation:
+        "Department of Bioinformatics, Pondicherry University (A Central University, Govt of India), Pondicherry, India.",
+    },
+    {
+      name: "Dr. Pooja Sharma",
+      affiliation:
+        "Department of Zoology, Mata Jijabai Govt Girls College, Indore, India",
+    },
+    {
+      name: "Dr. Ranjana Verma",
+      affiliation:
+        "Department of Zoology, Bherulal Patidar Govt PG College, MHOW, India.",
+    },
+    {
+      name: "Dr. Sanjay Singh Baroniya",
+      affiliation:
+        "Department of Botany, Swa. Tukojirao Pawar Shaskiya Vigyan Mahavidyalaya, Dewas",
+    },
+    {
+      name: "Dr. Praval Singh Chauhan",
+      affiliation:
+        "School of Sciences, ITM (SLS) Baroda University, Vadodara, Gujarat, India",
+    },
+    {
+      name: "Dr. Ashok Kumar Khandel",
+      affiliation:
+        "Head & Principal Scientist, Bhoomi Biotechnology Venture for Research and Development, Bhopal (M.P.), India",
+    },
+    {
+      name: "Dr. Shivangi Saxena",
+      affiliation:
+        "Jaypee Institute of Information Technology, Noida",
+    },
+    {
+      name: "Dr. Amita Jain",
+      affiliation:
+        "Department of Computer Science & Engineering, Prestige Institute of Engineering Management and Research (PIEMR), Indore",
+    },
+    {
+      name: "Dr. Lakshmi Pillai",
+      affiliation:
+        "Department of Bioinformatics, Institute of Sciences, SAGE University, Indore",
+    },
+    {
+      name: "Dr. Doel Bose Pande",
+      affiliation:
+        "B.E (Electronics), M.Sc, Ph.D, ESHRE Certified Senior Clinical Embryologist, Indore Infertility Centre, Indore",
+    },
+    {
+      name: "Dr. Rachana Bajpai",
+      affiliation:
+        "Embryologist, Dept. of Clinical Embryology, Mohak IVF, Sri Aurobindo University, Indore, India.",
+    },
   ];
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-      {/* HEADER */}
-      <div className="mb-12 text-center sm:text-left">
-        <h1 className="text-3xl sm:text-4xl font-bold text-slate-900">
-          Editorial Board
-        </h1>
+      {/* ================= EDITOR IN CHIEF ================= */}
+      <div className="mb-10">
+        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+          Editor-in-Chief
+        </h2>
 
-        <div className="mt-3 w-20 h-1 bg-gradient-to-r from-[#0A1F44] to-[#F4A623] rounded-full mx-auto sm:mx-0" />
+        <div className="mt-3 w-16 h-1 bg-[#0A1F44]" />
 
-        <p className="mt-4 text-slate-600 text-sm sm:text-base max-w-2xl">
-          DRL Journal of Sciences is supported by a distinguished panel of researchers,
-          academicians, and experts from across the globe.
-        </p>
-      </div>
-
-      {/* EDITOR-IN-CHIEF */}
-      <div className="mb-12">
-        <div className="bg-gradient-to-r from-[#0A1F44] to-[#1e3a8a] text-white rounded-2xl p-6 sm:p-8 shadow-lg">
-
-          <span className="text-sm uppercase tracking-wide text-[#F4A623] font-semibold">
-            Editor-in-Chief
-          </span>
-
-          <h2 className="text-2xl sm:text-3xl font-bold mt-2">
+        <div className="mt-4 bg-white border rounded-xl p-6 shadow-sm">
+          <h3 className="text-lg font-semibold text-slate-900">
             {editorInChief.name}
-          </h2>
-
-          <p className="mt-2 text-sm sm:text-base text-gray-200">
+          </h3>
+          <p className="text-sm text-slate-600 mt-2 whitespace-pre-line">
             {editorInChief.affiliation}
           </p>
-
         </div>
       </div>
 
-      {/* MEMBERS */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {/* ================= EDITORIAL BOARD ================= */}
+      <div>
+        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+          Editorial Board
+        </h2>
 
-        {members.map((member, index) => (
-          <div
-            key={index}
-            className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition"
-          >
+        <div className="mt-3 w-16 h-1 bg-[#0A1F44]" />
 
-            <span className="text-xs font-semibold text-[#F4A623]">
-              #{index + 1}
-            </span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
 
-            <h3 className="text-lg font-semibold text-slate-900 mt-2">
-              {member.name}
-            </h3>
+          {members.map((member, index) => (
+            <div
+              key={index}
+              className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition"
+            >
+              <h3 className="text-base font-semibold text-slate-900">
+                {member.name}
+              </h3>
 
-            <p className="text-sm text-slate-600 mt-2 leading-relaxed">
-              {member.affiliation}
-            </p>
+              <p className="text-sm text-slate-600 mt-2 whitespace-pre-line">
+                {member.affiliation}
+              </p>
+            </div>
+          ))}
 
-          </div>
-        ))}
-
+        </div>
       </div>
 
     </div>
