@@ -5,28 +5,22 @@ export async function GET() {
 
   try {
 
-    const journals = await prisma.journal.findMany();
+    await prisma.$queryRaw`SELECT 1`;
 
-    const serializedData = JSON.parse(
-      JSON.stringify(
-        journals,
-        (_, value) =>
-          typeof value === "bigint"
-            ? value.toString()
-            : value
-      )
-    );
+    return NextResponse.json({
+      success: true,
+      message: "DB connected"
+    });
 
-    return NextResponse.json(serializedData);
-
-  } catch (error) {
+  } catch (error: any) {
 
     console.error(error);
 
-    return NextResponse.json(
-      { error: "Database connection failed" },
-      { status: 500 }
-    );
+    return NextResponse.json({
+      success: false,
+      error: error.message,
+      full: error
+    });
 
   }
 
