@@ -1,29 +1,33 @@
 import { prisma } from "@/lib/prisma";
-import { serializeData } from "@/lib/serialize";
 import { NextResponse } from "next/server";
 
 export async function GET() {
 
   try {
 
-    const journals = await prisma.journal.findMany({
-      orderBy: {
-         id: "asc",
-      },
-    });
+    const journals = await prisma.journal.findMany();
 
     return NextResponse.json(
-      serializeData(journals)
+      JSON.parse(
+        JSON.stringify(
+          journals,
+          (_, value) =>
+            typeof value === "bigint"
+              ? value.toString()
+              : value
+        )
+      )
     );
 
-  } catch (error) {
+  } catch (error: any) {
 
     console.error(error);
 
-    return NextResponse.json(
-      { error: "Failed to fetch journals" },
-      { status: 500 }
-    );
+    return NextResponse.json({
+      message: error.message,
+      code: error.code,
+      full: String(error)
+    });
 
   }
 
