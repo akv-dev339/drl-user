@@ -172,6 +172,16 @@ SAGE University, Indore.`,
       affiliation:
         "Embryologist, Dept. of Clinical Embryology, Mohak IVF, Sri Aurobindo University, Indore, India.",
     },
+     {
+      name: "Dr.Sunil Ghatge",
+      affiliation:
+        "Research Professor, Sustainable Resource Engineering Lab, College of Life Science and Biotechnology, Korea University, Seoul, South Korea",
+    },
+     {
+      name: "Dr Sunita Kataria",
+      affiliation:
+        "Woman Scientists,School of Biochemistry, Devi Ahilya Vishwavidyalaya,Indore, India",
+    },
   ];
 
   return (

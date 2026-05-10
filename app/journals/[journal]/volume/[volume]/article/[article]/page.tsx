@@ -187,7 +187,7 @@ export async function generateMetadata({ params }: ArticlePageProps) {
   const resolvedParams = await params;
 
   const res = await fetch(
-    `https://drl-backend-wlz1.onrender.com/api/articles/${resolvedParams.article}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/articles/${resolvedParams.article}`,
     { cache: "no-store" }
   );
 
@@ -210,7 +210,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const articleId = resolvedParams.article;
 
   const articleRes = await fetch(
-    `https://drl-backend-wlz1.onrender.com/api/articles/${articleId}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/articles/${articleId}`,
     { cache: "no-store" }
   );
 
@@ -227,7 +227,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const article = await articleRes.json();
 
   const volumeRes = await fetch(
-    `https://drl-backend-wlz1.onrender.com/api/volumes/${volumeId}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/volumes/${volumeId}`,
     { cache: "no-store" }
   );
 

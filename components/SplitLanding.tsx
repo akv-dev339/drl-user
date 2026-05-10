@@ -69,7 +69,7 @@ export default function SplitLanding() {
         </motion.div>
 
         {/* RIGHT – LAB */}
-        <motion.div
+        {/* <motion.div
           onHoverStart={() => setHovered("lab")}
           onHoverEnd={() => setHovered(null)}
           animate={{ flex: hovered === "lab" ? 1.15 : 1 }}
@@ -99,7 +99,7 @@ export default function SplitLanding() {
 >
   Visit Lab
 </a>
-        </motion.div>
+        </motion.div> */}
 
       </div>
     </div>

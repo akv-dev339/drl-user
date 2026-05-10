@@ -4,7 +4,7 @@ import JournalCard from "@/components/JournalCard";
 
 export default async function JournalsPage() {
   const journals = await fetch(
-    "https://drl-backend-wlz1.onrender.com/api/journals",
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/journals`,
     { cache: "no-store" }
   ).then(res => res.json());
 

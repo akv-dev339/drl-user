@@ -215,7 +215,7 @@ export default async function JournalHome({ params }: JournalPageProps) {
   const resolvedParams = await params;
 
   const res = await fetch(
-    `https://drl-backend-wlz1.onrender.com/api/journals/${resolvedParams.journal}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/journals/${resolvedParams.journal}`,
     { cache: "no-store" }
   );
 
@@ -235,7 +235,7 @@ export default async function JournalHome({ params }: JournalPageProps) {
     <div className="max-w-5xl mx-auto px-4 sm:px-6 leading-relaxed">
 
       {/* ================= JOURNAL ID = 1 (SCIENCES) ================= */}
-      {journal.id === 1 && (
+      {Number(journal.id) === 1 && (
         <>
           <div className="mb-8 sm:mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
@@ -247,7 +247,7 @@ export default async function JournalHome({ params }: JournalPageProps) {
           <div className="bg-white rounded-2xl border border-slate-200 shadow-md p-6 sm:p-10 space-y-6 sm:space-y-8 text-slate-800 text-[15px] sm:text-base">
 
             <p>
-              Journal of Sciences is a multidisciplinary, peer-reviewed academic journal dedicated to publishing high-quality research across a broad spectrum of scientific disciplines. The journal serves as a dynamic platform for researchers, academicians, industry experts, and scholars to disseminate innovative findings, emerging technologies, and interdisciplinary advancements that contribute to scientific progress and societal development.
+             DRL Journal of Sciences is a multidisciplinary, peer-reviewed academic journal dedicated to publishing high-quality research across a broad spectrum of scientific disciplines. The journal serves as a dynamic platform for researchers, academicians, industry experts, and scholars to disseminate innovative findings, emerging technologies, and interdisciplinary advancements that contribute to scientific progress and societal development.
             </p>
 
             <div className="pt-4 sm:pt-6">
@@ -316,7 +316,7 @@ export default async function JournalHome({ params }: JournalPageProps) {
       )}
 
       {/* ================= JOURNAL ID = 2 (MULTIDISCIPLINARY) ================= */}
-      {journal.id === 2 && (
+      {Number(journal.id) === 2 && (
         <>
           <div className="mb-8 sm:mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
@@ -399,7 +399,7 @@ export default async function JournalHome({ params }: JournalPageProps) {
       )}
 
       {/* ================= FALLBACK ================= */}
-      {journal.id !== 1 && journal.id !== 2 && (
+      {Number(journal.id)!== 1 && Number(journal.id) !== 2 && (
         <div className="text-slate-700">
           <p>Overview content will be available soon.</p>
         </div>

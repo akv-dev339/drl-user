@@ -153,7 +153,7 @@ export default async function VolumePage({ params }: VolumePageProps) {
   const volumeId = resolvedParams.volume;
 
   const volumeRes = await fetch(
-    `https://drl-backend-wlz1.onrender.com/api/volumes/${volumeId}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/volumes/${volumeId}`,
     { cache: "no-store" }
   );
 
@@ -170,7 +170,7 @@ export default async function VolumePage({ params }: VolumePageProps) {
   const volume = await volumeRes.json();
 
   const articlesRes = await fetch(
-    `https://drl-backend-wlz1.onrender.com/api/articles/volume/${volumeId}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/articles/volume/${volumeId}`,
     { cache: "no-store" }
   );
 

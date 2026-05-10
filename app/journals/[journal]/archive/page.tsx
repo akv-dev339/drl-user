@@ -134,7 +134,7 @@ export default async function ArchivePage({ params }: ArchivePageProps) {
   const journalId = resolvedParams.journal;
 
   const volumesRes = await fetch(
-    `https://drl-backend-wlz1.onrender.com/api/volumes/journal/${journalId}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/volumes/journal/${journalId}`,
     { cache: "no-store" }
   );
 
