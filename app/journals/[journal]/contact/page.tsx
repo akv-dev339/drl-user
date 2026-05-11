@@ -40,34 +40,30 @@ export default function ContactPage() {
         </section>
 
         {/* ================= EDITORIAL OFFICE ================= */}
-        <section className="space-y-4">
-          <h3 className="text-2xl font-semibold text-slate-900">
-            Editorial Office
-          </h3>
+<section className="space-y-4">
+  <h3 className="text-2xl font-semibold text-slate-900">
+    Editorial Office
+  </h3>
 
-          <p>
-            Journal of Sciences<br />
-            DRL Journals Editorial Office
-          </p>
+  <div className="bg-slate-50 border border-slate-200 rounded-xl p-6 space-y-3">
+    
+    {/* <p className="font-medium text-slate-900">
+      DRL Journal of Sciences <br />
+    </p> */}
 
-          <p className="text-slate-700">
-            The Editorial Office is responsible for managing manuscript submissions,
-            coordinating peer review, handling publication queries, and ensuring
-            adherence to journal policies.
-          </p>
-        </section>
+    <p className="text-slate-700 leading-relaxed">
+      H. No. 439 Nalanda Parisar, <br />
+      Kesar Bagh Road, Indore-452012 (M.P.) India.
+    </p>
 
-        {/* ================= RESPONSE TIME ================= */}
+  </div>
 
-
-        {/* ================= PROFESSIONAL NOTE ================= */}
-        <section className="bg-slate-50 border border-slate-200 rounded-xl p-6">
-          <p className="text-slate-700">
-            We encourage authors and researchers to carefully review the
-            Submission Guidelines and Author Guidelines before contacting the
-            Editorial Office to ensure a smooth communication process.
-          </p>
-        </section>
+  <p className="text-slate-700">
+    The Editorial Office is responsible for managing manuscript submissions,
+    coordinating peer review, handling publication queries, and ensuring
+    adherence to journal policies.
+  </p>
+</section>
 
       </div>
     
