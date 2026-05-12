@@ -7,22 +7,110 @@ interface PageProps {
 export default async function EditorialPage({ params }: PageProps) {
   const { journal } = await params;
 
-  /* ================= JOURNAL 2 → COMING SOON ================= */
-  if (journal === "2") {
-    return (
-      <div className="max-w-4xl mx-auto text-center py-24 px-4">
-        <h1 className="text-3xl sm:text-4xl font-bold text-slate-900">
-          Page Coming Soon
-        </h1>
+  /* ================= JOURNAL 2 ================= */
+if (journal === "2") {
+  return (
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
 
-        <div className="mt-4 w-20 h-1 mx-auto bg-gradient-to-r from-[#0A1F44] to-[#F4A623] rounded-full" />
+      {/* ================= EDITOR IN CHIEF ================= */}
+      <div className="mb-12">
 
-        <p className="mt-6 text-base sm:text-lg text-slate-600">
-          This section is currently under development. The content will be available soon.
-        </p>
+        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+          Editor-in-Chief
+        </h2>
+
+        <div className="mt-3 w-16 h-1 bg-[#0A1F44]" />
+
+        <div className="mt-6 bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
+
+          <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-relaxed">
+            Dr. Lalit Kumar Dubey
+          </h3>
+
+          <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed whitespace-pre-line">
+
+            Ph.D. (Commerce), M.Phil., M.Com., MBA, LLB,
+            Associate Professor,
+            Acropolis Institute of Management Studies and Research,
+            Indore
+
+          </p>
+
+        </div>
+
       </div>
-    );
-  }
+
+      {/* ================= EDITORIAL BOARD ================= */}
+      <div>
+
+        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+          Editorial Board
+        </h2>
+
+        <div className="mt-3 w-16 h-1 bg-[#0A1F44]" />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-8">
+
+          {[
+            {
+              name: "Dr. Sonali Karnik, Ph.D.",
+              affiliation:
+                "Assistant Professor, Marwadi University, Rajkot, Gujarat",
+            },
+            {
+              name: "Dr. Vinod Kumar Yadav, Ph.D.",
+              affiliation:
+                "Assistant Professor, Department of Commerce, Rajiv Gandhi University [A Central University], Rono Hills, Doimukh-791112, Papum Pare, Arunachal Pradesh, India",
+            },
+            {
+              name: "Dr. Jamna Mishra",
+              affiliation:
+                "Director, Lakshmi Narain College of Technology (LNCT), Indore (Journalism and Mass Communication)",
+            },
+          ].map((member, index) => (
+
+            <div
+              key={index}
+              className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-7 shadow-sm hover:shadow-lg transition-all duration-300"
+            >
+
+              <div className="flex items-start gap-4">
+
+                {/* NUMBER */}
+                <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center shrink-0">
+
+                  <span className="text-sm font-bold text-blue-900">
+                    {index + 1}
+                  </span>
+
+                </div>
+
+                {/* CONTENT */}
+                <div>
+
+                  <h3 className="text-base sm:text-lg font-semibold text-slate-900 leading-relaxed">
+                    {member.name}
+                  </h3>
+
+                  <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+                    {member.affiliation}
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+  );
+}
 
   /* ================= DATA ================= */
 
