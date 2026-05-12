@@ -286,22 +286,60 @@ if (journal === "2") {
 
       {/* ================= EDITOR IN CHIEF ================= */}
       <div className="mb-10">
-        <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
-          Editor-in-Chief
-        </h2>
 
-        <div className="mt-3 w-16 h-1 bg-[#0A1F44]" />
+  <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+    Editor-in-Chief
+  </h2>
 
-        <div className="mt-4 bg-white border rounded-xl p-6 shadow-sm">
-          <h3 className="text-lg font-semibold text-slate-900">
-            {editorInChief.name}
-          </h3>
-          <p className="text-sm text-slate-600 mt-2 whitespace-pre-line">
-            {editorInChief.affiliation}
-          </p>
-        </div>
+  <div className="mt-3 w-16 h-1 bg-[#0A1F44]" />
+
+  <div className="mt-4 bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 shadow-sm hover:shadow-md transition-all duration-300">
+
+    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-5">
+
+      {/* LEFT */}
+      <div>
+
+        <h3 className="text-lg sm:text-xl font-semibold text-slate-900">
+          {editorInChief.name}
+        </h3>
+
+        <p className="text-sm sm:text-base text-slate-600 mt-3 whitespace-pre-line leading-relaxed">
+          {editorInChief.affiliation}
+        </p>
+
       </div>
 
+      {/* RIGHT */}
+      <a
+        href="https://scholar.google.com/citations?user=PS2X9BcAAAAJ&hl=en"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-3 px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 transition-all duration-300 shrink-0 w-fit"
+      >
+
+        {/* ICON */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          className="w-5 h-5 text-[#00CCBB]"
+        >
+          <path d="M19.586 0H4.414A4.414 4.414 0 000 4.414v15.172A4.414 4.414 0 004.414 24h15.172A4.414 4.414 0 0024 19.586V4.414A4.414 4.414 0 0019.586 0zM7.97 18.618H5.542V5.382h6.313c2.76 0 4.58 1.68 4.58 4.248 0 1.94-1.116 3.396-2.954 3.92l3.204 5.068h-2.79l-2.9-4.706H7.97v4.706zm3.538-6.79c1.42 0 2.31-.84 2.31-2.198 0-1.358-.89-2.184-2.31-2.184H7.97v4.382h3.538z"/>
+        </svg>
+
+        {/* TEXT */}
+        <span className="text-sm font-medium text-slate-700">
+          ResearchGate
+        </span>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
       {/* ================= EDITORIAL BOARD ================= */}
       <div>
         <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
