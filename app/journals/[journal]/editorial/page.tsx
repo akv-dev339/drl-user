@@ -116,24 +116,23 @@ if (journal === "2") {
 
   const editorInChief = {
     name: "Dr. Sandeep Kumar Verma",
-    affiliation: `Professor & Head of Institute,
-SAGE University, Indore.`,
+    affiliation: `Professor & Head of Institute,Institute of Sciences,SAGE University, Indore, India`,
   };
 
   const members = [
     {
       name: "Dr. Swati Dubey Mishra",
-      affiliation: "Shri Vaishnav Institute of Forensic Science, Indore",
+      affiliation: "Shri Vaishnav Institute of Forensic Science,Shri Vaishnav Vidyapeeth Vishwavidyalaya,Indore, India",
     },
     {
       name: "Dr. Bhawana Joshi",
       affiliation:
-        "School of Basic and Applied Sciences, SGT University, Gurugram",
+        "School of Basic and Applied Sciences, SGT University, Gurugram, India",
     },
     {
       name: "Dr. Maninder Kaur",
       affiliation:
-        "School of Allied and Healthcare Sciences, AP Goyal Shimla University, Shimla",
+        "School of Allied and Healthcare Sciences, AP Goyal Shimla University, Shimla, India",
     },
     {
       name: "Dr. Viplov Kumar Biswas",
