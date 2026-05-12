@@ -108,10 +108,9 @@ export default async function HomePage() {
         {/* ================= TOP STRIP ================= */}
         <div className="relative z-20 border-b border-slate-200 bg-white/80 backdrop-blur-xl">
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-6 flex justify-center">
 
-            <div className="flex items-center gap-3 sm:gap-6">
-
+            <div className="flex items-center justify-center gap-3 sm:gap-6 mx-auto">
               {/* LOGO */}
               <div className="relative">
 
@@ -133,7 +132,7 @@ export default async function HomePage() {
               </div>
 
               {/* NAME */}
-              <div>
+              <div className="text-left">
 
                 <h1 className="text-2xl sm:text-4xl md:text-5xl font-black tracking-tight bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-700 bg-clip-text text-transparent">
 
@@ -194,12 +193,7 @@ export default async function HomePage() {
               {/* DESCRIPTION */}
               <p className="mt-6 sm:mt-10 text-base sm:text-lg lg:text-xl leading-relaxed text-slate-600 max-w-2xl">
 
-                DRL Journals is dedicated to publishing high-quality,
-                peer-reviewed research across multidisciplinary sciences,
-                biotechnology, healthcare, engineering, and emerging
-                academic domains while maintaining the highest standards
-                of editorial integrity, scientific excellence, and
-                global research accessibility.
+                DRL Journals⁠ is an international peer-reviewed publishing platform dedicated to promoting high-quality research, scientific excellence, ethical publishing practices, and global knowledge dissemination across science and multidisciplinary academic domains.
 
               </p>
 
@@ -227,7 +221,7 @@ export default async function HomePage() {
 
                 {[
                   {
-                    number: "2+",
+                    number: "2",
                     label: "Active Journals",
                   },
                   {
@@ -332,9 +326,9 @@ export default async function HomePage() {
                         desc: "Global accessibility",
                       },
                       {
-                        title: "DOI Support",
-                        desc: "Structured publishing",
-                      },
+  title: "DOI Support",
+  desc: "Currently in process",
+},
                       {
                         title: "Global Authors",
                         desc: "International collaboration",
@@ -387,13 +381,13 @@ export default async function HomePage() {
               Explore Our Journals
             </h2>
 
-            <p className="mt-6 max-w-3xl mx-auto text-base sm:text-lg text-slate-600 leading-relaxed">
+            {/* <p className="mt-6 max-w-3xl mx-auto text-base sm:text-lg text-slate-600 leading-relaxed">
 
               Discover peer-reviewed journals covering biotechnology,
               multidisciplinary sciences, and emerging research domains
               with a commitment to academic excellence.
 
-            </p>
+            </p> */}
 
           </div>
 
@@ -443,14 +437,14 @@ export default async function HomePage() {
                     </h3>
 
                     {/* DESCRIPTION */}
-                    <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed">
+                    {/* <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed">
 
                       {journal.title.includes("Sciences")
                         ? "Focused on advancing biotechnology, applied sciences, and innovative scientific research through high-quality scholarly publications."
                         : "Dedicated to multidisciplinary academic research spanning interdisciplinary and emerging global domains."
                       }
 
-                    </p>
+                    </p> */}
 
                     {/* BUTTON */}
                     <div className="mt-8 sm:mt-10">

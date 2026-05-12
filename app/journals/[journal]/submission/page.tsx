@@ -35,13 +35,13 @@ export default async function SubmissionPage({ params }: SubmissionPageProps) {
       {journal.id === 1 && (
         <>
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-slate-900">
+            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
               DRL Journal of Sciences – Manuscript Submission Guidelines
             </h2>
             <div className="mt-3 w-20 h-1 bg-gradient-to-r from-blue-900 to-indigo-600 rounded-full" />
           </div>
 
-          <div className="bg-white rounded-2xl border border-slate-200 shadow-md p-10 space-y-10">
+          <div className="bg-white rounded-2xl border border-slate-200 shadow-md p-5 sm:p-8 lg:p-10 space-y-10">
             
 
             {/* INTRO */}
@@ -51,8 +51,8 @@ export default async function SubmissionPage({ params }: SubmissionPageProps) {
                 Authors must send all required documents to the Editorial Office at:
               </p>
 
-              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
-                <p className="text-lg font-semibold text-blue-900">
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 sm:p-6 text-center overflow-hidden">
+                <p className="text-sm sm:text-lg break-all font-semibold text-blue-900">
                   📩 drljournals@dnadsresearch.com
                 </p>
               </div>
@@ -251,18 +251,18 @@ export default async function SubmissionPage({ params }: SubmissionPageProps) {
       {journal.id === 2 && (
         <>
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-slate-900">
+            <h2 className="text-2xl sm:text-3xlfont-bold text-slate-900">
               DRL Journal of Multidisciplinary Studies – Manuscript Submission Guidelines
             </h2>
             <div className="mt-3 w-20 h-1 bg-gradient-to-r from-blue-900 to-indigo-600 rounded-full" />
           </div>
 
-          <div className="bg-white rounded-2xl border border-slate-200 shadow-md p-10 space-y-8 text-slate-700">
+          <div className="bg-white rounded-2xl border border-slate-200 shadow-md p-5 sm:p-8 lg:p-10space-y-8 text-slate-700">
 
             <p>The DRL Journal of Multidisciplinary Studies currently accepts manuscripts via e-mail submission only. Authors must send all required documents to the Editorial Office at:</p>
 
-            <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
-              <p className="text-lg font-semibold text-blue-900">📩 drljournals@dnadsresearch.com</p>
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 sm:p-6 text-center overflow-hidden">
+              <p className="text-sm sm:text-lg break-all font-semibold text-blue-900">📩 drljournals@dnadsresearch.com</p>
             </div>
 
             <p>Authors are requested to carefully follow the instructions below to ensure smooth processing of their submission.</p>

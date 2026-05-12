@@ -55,7 +55,7 @@ if (journal === "2") {
             {
               name: "Dr. Sonali Karnik, Ph.D.",
               affiliation:
-                "Assistant Professor, Marwadi University, Rajkot, Gujarat",
+                "Faculty of Management Studies,Assistant Professor, Marwadi University, Rajkot, Gujarat",
             },
             {
               name: "Dr. Vinod Kumar Yadav, Ph.D.",
@@ -266,9 +266,19 @@ SAGE University, Indore.`,
         "Research Professor, Sustainable Resource Engineering Lab, College of Life Science and Biotechnology, Korea University, Seoul, South Korea",
     },
      {
-      name: "Dr Sunita Kataria",
+      name: "Dr. Sunita Kataria",
       affiliation:
         "Woman Scientists,School of Biochemistry, Devi Ahilya Vishwavidyalaya,Indore, India",
+    },
+    {
+      name: "Dr. Dipul Kumar Biswas ",
+      affiliation:
+        "Department of Biotechnology, Institute of Sciences, SAGE University Indore, India",
+    },
+    {
+      name: "Prof. Nitin Puranik",
+      affiliation:
+        "Department of Biotechnology,Institute of Sciences,SAGE University Indore",
     },
   ];
 

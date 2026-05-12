@@ -239,7 +239,7 @@ export default async function JournalHome({ params }: JournalPageProps) {
         <>
           <div className="mb-8 sm:mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
-              Journal of Sciences – Overview
+             DRL Journal of Sciences – Overview
             </h2>
             <div className="mt-3 w-20 sm:w-24 h-1 bg-gradient-to-r from-blue-900 to-indigo-600 rounded-full" />
           </div>
@@ -280,6 +280,7 @@ export default async function JournalHome({ params }: JournalPageProps) {
                 <li>Medical Sciences</li>
                 <li>Allied Health Sciences</li>
                 <li>Reproductive Biology</li>
+                <li>Computer Science</li>
               </ul>
 
               <ul className="list-disc pl-5 sm:pl-6 space-y-1 sm:space-y-2 marker:text-blue-800">
@@ -299,6 +300,8 @@ export default async function JournalHome({ params }: JournalPageProps) {
                 <li>Earth Sciences</li>
                 <li>Geology</li>
                 <li>Natural Sciences</li>
+                <li>Genetics</li>
+                <li>Statistics</li>
               </ul>
 
               <ul className="list-disc pl-5 sm:pl-6 space-y-1 sm:space-y-2 marker:text-blue-800 sm:col-span-2">
