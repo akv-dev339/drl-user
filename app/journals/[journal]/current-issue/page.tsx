@@ -14,9 +14,9 @@ export default async function CurrentIssuePage({
   const journalId = resolvedParams.journal;
 
   const volumesRes = await fetch(
-    `https://drl-backend-wlz1.onrender.com/api/volumes/journal/${journalId}`,
-    { cache: "no-store" }
-  );
+  `${process.env.NEXT_PUBLIC_BASE_URL}/api/volumes/journal/${journalId}`,
+  { cache: "no-store" }
+);
 
   if (!volumesRes.ok) {
     return <div className="text-center py-20">No volumes available.</div>;
@@ -28,16 +28,16 @@ export default async function CurrentIssuePage({
     return <div className="text-center py-20">No volumes available.</div>;
   }
 
-  const currentVolume = volumes.find((v: any) => v.isCurrent === true);
+  const currentVolume = volumes.find((v: any) => v.is_current === true);
 
   if (!currentVolume) {
     return <div className="text-center py-20">No current issue available.</div>;
   }
 
   const articlesRes = await fetch(
-    `https://drl-backend-wlz1.onrender.com/api/articles/volume/${currentVolume.id}`,
-    { cache: "no-store" }
-  );
+  `${process.env.NEXT_PUBLIC_BASE_URL}/api/articles/volume/${currentVolume.id}`,
+  { cache: "no-store" }
+);
 
   if (!articlesRes.ok) {
     return <div className="text-center py-20">No articles found.</div>;

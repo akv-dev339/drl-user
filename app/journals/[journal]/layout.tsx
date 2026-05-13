@@ -115,9 +115,9 @@ export default async function JournalLayout({
   const resolvedParams = await params;
 
   const res = await fetch(
-    `https://drl-backend-wlz1.onrender.com/api/journals/${resolvedParams.journal}`,
-    { cache: "no-store" }
-  );
+  `${process.env.NEXT_PUBLIC_BASE_URL}/api/journals/${resolvedParams.journal}`,
+  { cache: "no-store" }
+);
 
   let journalTitle = "DRL Journal";
   let journalIssn = "XXXX-XXXX";
