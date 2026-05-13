@@ -141,7 +141,7 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    google: "PASTE_YOUR_GOOGLE_VERIFICATION_CODE_HERE",
+    google: "JIglpJXXFMWHF-xiiWrB1oZ_A0s8plzNDsHfDl2YvdE",
   },
 
   icons: {
