@@ -28,10 +28,14 @@ export default function ContactPage() {
           </p>
 
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
-            <p className="text-lg font-semibold text-blue-900">
-              📩 drljournals@dnadsresearch.com
-            </p>
-          </div>
+  <p className="text-lg font-semibold text-blue-900">
+    📩 drlindore25@gmail.com
+  </p>
+
+  <p className="text-md font-medium text-blue-800 mt-2">
+    CC: drljournals@dnadsresearch.com
+  </p>
+</div>
 
           <p className="text-sm text-slate-600">
             All official communication regarding submissions, revisions, and publication

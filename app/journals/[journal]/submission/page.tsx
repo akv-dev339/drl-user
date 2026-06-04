@@ -51,11 +51,15 @@ export default async function SubmissionPage({ params }: SubmissionPageProps) {
                 Authors must send all required documents to the Editorial Office at:
               </p>
 
-              <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 sm:p-6 text-center overflow-hidden">
-                <p className="text-sm sm:text-lg break-all font-semibold text-blue-900">
-                  📩 drljournals@dnadsresearch.com
-                </p>
-              </div>
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+  <p className="text-lg font-semibold text-blue-900">
+    📩 drlindore25@gmail.com
+  </p>
+
+  <p className="text-md font-medium text-blue-800 mt-2">
+    CC: drljournals@dnadsresearch.com
+  </p>
+</div>
 
               <p className="text-slate-700">
                 Authors are requested to carefully follow the instructions below to ensure smooth processing of their submission.
