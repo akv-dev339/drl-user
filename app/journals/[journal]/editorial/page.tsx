@@ -164,6 +164,11 @@ if (journal === "2") {
       affiliation:
         "Ebittek Biyoteknoloji Ar-Ge Tic. Ltd Şti., Istanbul Universitesi Avcılar Kampüsü, Argem Binası, Ofis No: 13-14, Avcılar, Istanbul, Turkey",
     },
+     {
+      name: "Dr. Cenap Özel	",
+      affiliation:
+        "Department of Mathematics, Faculty of Science, King Abdulaziz UniversityLocation: Jeddah 21589, Saudi Arabia",
+    },
     {
       name: "Prof. Dr. Kubilay Kurtulus Bastas",
       affiliation:
