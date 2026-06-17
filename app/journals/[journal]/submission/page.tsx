@@ -65,6 +65,19 @@ export default async function SubmissionPage({ params }: SubmissionPageProps) {
                 Authors are requested to carefully follow the instructions below to ensure smooth processing of their submission.
               </p>
             </section>
+            
+          {/* IMPORTANT NOTE */}
+<div className="bg-amber-50 border-l-4 border-amber-500 rounded-lg p-4 mb-6">
+  <p className="text-amber-900 font-semibold">
+    Important Note:
+  </p>
+  <p className="text-amber-800 mt-1">
+    English is the official language of publication of the journal.
+  </p>
+</div>
+
+
+
 
             {/* I */}
             <section className="space-y-4">
