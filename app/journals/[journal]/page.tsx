@@ -249,7 +249,85 @@ export default async function JournalHome({ params }: JournalPageProps) {
             <p>
              DRL Journal of Sciences is a multidisciplinary, peer-reviewed academic journal dedicated to publishing high-quality research across a broad spectrum of scientific disciplines. The journal serves as a dynamic platform for researchers, academicians, industry experts, and scholars to disseminate innovative findings, emerging technologies, and interdisciplinary advancements that contribute to scientific progress and societal development.
             </p>
+          {/* ================= JOURNAL INFORMATION ================= */}
+  <div className="pt-2">
+    <h3 className="text-xl sm:text-2xl font-semibold text-slate-900">
+      About Us
+    </h3>
+    <div className="mt-3 w-16 sm:w-20 h-1 bg-gradient-to-r from-blue-900 to-indigo-600 rounded-full" />
+  </div>
 
+  <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
+    <div className="overflow-x-auto">
+      <table className="w-full border-collapse text-sm sm:text-base">
+        <tbody>
+          <tr className="border-b border-slate-200">
+            <td className="w-1/3 bg-slate-50 px-5 py-4 font-semibold text-slate-800">
+              Year of Establishment
+            </td>
+            <td className="px-5 py-4">2026</td>
+          </tr>
+
+          <tr className="border-b border-slate-200">
+            <td className="bg-slate-50 px-5 py-4 font-semibold text-slate-800">
+              Publication Frequency
+            </td>
+            <td className="px-5 py-4">Monthly</td>
+          </tr>
+
+          <tr className="border-b border-slate-200">
+            <td className="bg-slate-50 px-5 py-4 font-semibold text-slate-800">
+              Format
+            </td>
+            <td className="px-5 py-4">Online</td>
+          </tr>
+
+          <tr className="border-b border-slate-200">
+            <td className="bg-slate-50 px-5 py-4 font-semibold text-slate-800">
+              Language
+            </td>
+            <td className="px-5 py-4">English</td>
+          </tr>
+
+          <tr className="border-b border-slate-200">
+            <td className="bg-slate-50 px-5 py-4 font-semibold text-slate-800">
+              Subject Category
+            </td>
+            <td className="px-5 py-4">All Streams of Science</td>
+          </tr>
+
+          <tr className="border-b border-slate-200">
+            <td className="bg-slate-50 px-5 py-4 font-semibold text-slate-800">
+              Peer Review Process
+            </td>
+            <td className="px-5 py-4">Double-blind peer review</td>
+          </tr>
+
+          <tr>
+            <td className="bg-slate-50 px-5 py-4 font-semibold text-slate-800 align-top">
+              Email Contact
+            </td>
+            <td className="px-5 py-4">
+              <a
+                href="mailto:drlindore25@gmail.com"
+                className="text-blue-700 hover:underline"
+              >
+                drlindore25@gmail.com
+              </a>
+              <br />
+              <span className="text-slate-500">CC:</span>{" "}
+              <a
+                href="mailto:drljournals@dnadsresearch.com"
+                className="text-blue-700 hover:underline"
+              >
+                drljournals@dnadsresearch.com
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
             <div className="pt-4 sm:pt-6">
               <h3 className="text-xl sm:text-2xl font-semibold text-slate-900">
                 Aim & Scope of the Journal
